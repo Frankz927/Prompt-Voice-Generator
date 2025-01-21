@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import Link from 'next/link';
 
 export default function Home() {
   const [leftText, setLeftText] = useState('');
@@ -29,12 +28,12 @@ export default function Home() {
       </div>
 
       <div className="flex items-center justify-center flex-initial" style={{ height: '30%' }}>
-        <Link
-          href="/test"
+        <button
+          onClick={handleButtonClick}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
-          遷移
-        </Link>
+          ペースト
+        </button>
       </div>
 
     </div>
